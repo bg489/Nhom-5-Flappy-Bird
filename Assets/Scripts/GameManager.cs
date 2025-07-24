@@ -17,7 +17,10 @@ public class GameManager : MonoBehaviour
 
     public GameObject gameOver;
 
+    
+
     public InputAction pauseAction; // Action to pause the game
+    
 
 
     private int score;
@@ -112,6 +115,8 @@ public class GameManager : MonoBehaviour
         {
             Play(); // Pause the game if the Escape key is pressed
         }
+
+        
     }
 
 }
