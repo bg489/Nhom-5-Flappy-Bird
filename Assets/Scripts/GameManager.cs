@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 using TMPro;
+using UnityEngine.InputSystem;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,8 +14,23 @@ public class GameManager : MonoBehaviour
 
     public GameObject gameOver;
 
+    public InputAction pauseAction; // Action to pause the game
+
 
     private int score;
+
+    bool isPaused = false; // Flag to check if the game is paused
+
+    private void OnEnable()
+    {
+        pauseAction.Enable();
+    }
+
+    private void OnDisable()
+    {
+        pauseAction.Disable();
+    }
+
 
     private void Awake()
     {
@@ -24,6 +40,7 @@ public class GameManager : MonoBehaviour
 
     public void Play()
     {
+        isPaused = false; // Reset the pause flag
         score = 0;
         scoreText.text = score.ToString();
 
@@ -39,7 +56,7 @@ public class GameManager : MonoBehaviour
         {
             Destroy(pipe.gameObject); // Destroy all existing Pipes
         }
-        player.transform.position = Vector3.zero; // Reset the player's position to the center of the screen
+        player.transform.position = new Vector3(-7.0f, 0f, 0f); // Reset the player's position to the center of the screen
         player.transform.rotation = Quaternion.identity; // Reset the player's rotation to the default
         player.direction = Vector3.zero ;
     }
@@ -50,6 +67,7 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 0f;
         player.enabled = false;// Pause the game by setting time scale to 0
+        isPaused = true;
     }
 
     public void GameOver()
@@ -64,6 +82,15 @@ public class GameManager : MonoBehaviour
     {
         score+= 1;
         scoreText.text = score.ToString(); // Update the score text in the UI
+    }
+
+    private void Update()
+    {
+
+        if (isPaused && pauseAction.triggered)
+        {
+            Play(); // Pause the game if the Escape key is pressed
+        }
     }
 
 }

@@ -1,31 +1,56 @@
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Spawner : MonoBehaviour
 {
-    public GameObject prefab; // The prefab to spawn
+    public InputAction spawnAction; // Action để bật/tắt spawning
 
-    public float spawnRate = 1f; // Time interval between spawns
-
+    public GameObject prefab;
+    public float spawnRate = 1f;
     public float minHeight = -1f;
-
     public float maxHeight = 1f;
+
+    private bool wasSpawned;
+    public bool isSpawned = true;
 
     private void OnEnable()
     {
-        InvokeRepeating(nameof(Spawn), 0f, spawnRate);
+        spawnAction.Enable();
+        spawnAction.performed += OnSpawnActionPerformed;
     }
 
     private void OnDisable()
     {
-        CancelInvoke(nameof(Spawn));
+        spawnAction.performed -= OnSpawnActionPerformed;
+        spawnAction.Disable();
+    }
+
+    private void OnSpawnActionPerformed(InputAction.CallbackContext context)
+    {
+        // Toggle trạng thái bật/tắt spawn khi nhấn phím
+        isSpawned = !isSpawned;
     }
 
     private void Spawn()
     {
         GameObject pipes = Instantiate(prefab, transform.position, Quaternion.identity);
         pipes.transform.position += Vector3.up * Random.Range(minHeight, maxHeight);
-
     }
 
+    private void Update()
+    {
+        if (wasSpawned != isSpawned)
+        {
+            if (isSpawned)
+            {
+                InvokeRepeating(nameof(Spawn), 0f, spawnRate);
+            }
+            else
+            {
+                CancelInvoke(nameof(Spawn));
+            }
 
+            wasSpawned = isSpawned;
+        }
+    }
 }

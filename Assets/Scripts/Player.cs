@@ -1,8 +1,17 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
+    [SerializeField] private AudioClip jumpSound; // Audio clip for the jump sound effect
+    [SerializeField] private AudioClip pipePassSound;
+    [SerializeField] private AudioClip ouch;
+    [SerializeField] private AudioClip lose;
+    private AudioSource audioSource; // Reference to the AudioSource component
+
     private SpriteRenderer spriteRenderer; // Reference to the SpriteRenderer component
+
+    public InputAction jumpAction; // Action to handle jumping
 
     public Sprite[] sprites;
 
@@ -14,6 +23,17 @@ public class Player : MonoBehaviour
 
     public float strength = 10f;
 
+    private void OnEnable()
+    {
+        jumpAction.Enable();
+    }
+
+    private void OnDisable()
+    {
+        jumpAction.Disable();
+    }
+
+
 
     private void Awake()
     {
@@ -24,20 +44,24 @@ public class Player : MonoBehaviour
     void Start()
     {
         InvokeRepeating(nameof(AnimateSprite), 0.15f, 0.15f);
+        audioSource = GetComponent<AudioSource>(); // Get the AudioSource component attached to this GameObject
+        transform.position = new Vector3(-7.0f, 0f, 0f); // Set the initial position of the player
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetMouseButtonDown(0)){
+        if(jumpAction.triggered)
+        {
             direction = Vector3.up * strength;
+            audioSource.PlayOneShot(jumpSound); // Play the jump sound effect
         }
 
         if(Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
 
-            if (touch.phase == TouchPhase.Began)
+            if (touch.phase == UnityEngine.TouchPhase.Began)
             {
                 direction = Vector3.up * strength;
             }
@@ -65,9 +89,12 @@ public class Player : MonoBehaviour
         if (collision.CompareTag("Obstacles"))
         {
             FindAnyObjectByType<GameManager>().GameOver(); // Call the GameOver method from GameManager
+            audioSource.PlayOneShot(ouch); // Play the ouch sound effect
+            audioSource.PlayOneShot(lose); // Play the ouch sound effect
         } else if (collision.CompareTag("Scoring"))
         {
             FindAnyObjectByType<GameManager>().IncreaseScore();
+            audioSource.PlayOneShot(pipePassSound);
         }
     }
 }
