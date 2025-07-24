@@ -1,0 +1,767 @@
+fileFormatVersion: 2
+guid: ffca80684e742d2448c62832d10f0c59
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8875213994773252116
+    second: Insufficient Points Alert_0
+  - first:
+      213: 7062983466408032438
+    second: Insufficient Points Alert_1
+  - first:
+      213: 9220171867998512536
+    second: Insufficient Points Alert_2
+  - first:
+      213: 6488353318474821997
+    second: Insufficient Points Alert_3
+  - first:
+      213: -8742681411754564494
+    second: Insufficient Points Alert_4
+  - first:
+      213: 5320618598170746984
+    second: Insufficient Points Alert_5
+  - first:
+      213: 2831565012574130102
+    second: Insufficient Points Alert_6
+  - first:
+      213: -6525466796021446303
+    second: Insufficient Points Alert_7
+  - first:
+      213: 6575940522499622899
+    second: Insufficient Points Alert_8
+  - first:
+      213: 463983285949681666
+    second: Insufficient Points Alert_9
+  - first:
+      213: 6319450231240738793
+    second: Insufficient Points Alert_10
+  - first:
+      213: 2245273920013617345
+    second: Insufficient Points Alert_11
+  - first:
+      213: 6408562493333305390
+    second: Insufficient Points Alert_12
+  - first:
+      213: -99092710912195197
+    second: Insufficient Points Alert_13
+  - first:
+      213: 6023903082778315322
+    second: Insufficient Points Alert_14
+  - first:
+      213: 7956653407522721990
+    second: Insufficient Points Alert_15
+  - first:
+      213: -7549679639364250845
+    second: Insufficient Points Alert_16
+  - first:
+      213: -1152176299595691871
+    second: Insufficient Points Alert_17
+  - first:
+      213: -1000834402385790121
+    second: Insufficient Points Alert_18
+  - first:
+      213: -7933204903045249289
+    second: Insufficient Points Alert_19
+  - first:
+      213: 5467176532019090896
+    second: Insufficient Points Alert_20
+  - first:
+      213: 8921062775428846554
+    second: Insufficient Points Alert_21
+  - first:
+      213: -6459925411825866633
+    second: Insufficient Points Alert_22
+  - first:
+      213: -8200953393162127463
+    second: Insufficient Points Alert_23
+  - first:
+      213: 4976139759037428786
+    second: Insufficient Points Alert_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Insufficient Points Alert_0
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 683
+        width: 161
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce7f6f705e7e4d480800000000000000
+      internalID: -8875213994773252116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Insufficient Points Alert_1
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 683
+        width: 114
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b835b99a02c40260800000000000000
+      internalID: 7062983466408032438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Insufficient Points Alert_2
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 683
+        width: 118
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 895e910a671a4ff70800000000000000
+      internalID: 9220171867998512536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Insufficient Points Alert_3
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 683
+        width: 135
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d613be467f24b0a50800000000000000
+      internalID: 6488353318474821997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Insufficient Points Alert_4
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 683
+        width: 117
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27465f3a391cba680800000000000000
+      internalID: -8742681411754564494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Insufficient Points Alert_5
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 683
+        width: 115
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 860ed49dc62a6d940800000000000000
+      internalID: 5320618598170746984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Insufficient Points Alert_6
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 683
+        width: 115
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bfc7ec606dbb4720800000000000000
+      internalID: 2831565012574130102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Insufficient Points Alert_7
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 683
+        width: 87
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 169098db582e075a0800000000000000
+      internalID: -6525466796021446303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Insufficient Points Alert_8
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 468
+        width: 108
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f7cfab701f624b50800000000000000
+      internalID: 6575940522499622899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Insufficient Points Alert_9
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 468
+        width: 99
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 200dfbc1756607600800000000000000
+      internalID: 463983285949681666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Insufficient Points Alert_10
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 468
+        width: 118
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e74dd0e08233b750800000000000000
+      internalID: 6319450231240738793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Insufficient Points Alert_11
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 468
+        width: 109
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c84cd9fbb0d82f10800000000000000
+      internalID: 2245273920013617345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Insufficient Points Alert_12
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 468
+        width: 111
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e28f50832a9cfe850800000000000000
+      internalID: 6408562493333305390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Insufficient Points Alert_13
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 468
+        width: 101
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3858f3654b3ff9ef0800000000000000
+      internalID: -99092710912195197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Insufficient Points Alert_14
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 468
+        width: 111
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3ac16210f3399350800000000000000
+      internalID: 6023903082778315322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Insufficient Points Alert_15
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 468
+        width: 102
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c01b443e16bb6e60800000000000000
+      internalID: 7956653407522721990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Insufficient Points Alert_16
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 417
+        width: 114
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 323d1bf2e562a3790800000000000000
+      internalID: -7549679639364250845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Insufficient Points Alert_17
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 468
+        width: 108
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a889ff82c5a200f0800000000000000
+      internalID: -1152176299595691871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Insufficient Points Alert_18
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 378
+        width: 47
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75bfdc6e9625c12f0800000000000000
+      internalID: -1000834402385790121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Insufficient Points Alert_19
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 238
+        width: 92
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f6c99f2c2897e190800000000000000
+      internalID: -7933204903045249289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Insufficient Points Alert_20
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 199
+        width: 125
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d5995be6105fdb40800000000000000
+      internalID: 5467176532019090896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Insufficient Points Alert_21
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 238
+        width: 120
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad39564145bfdcb70800000000000000
+      internalID: 8921062775428846554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Insufficient Points Alert_22
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 238
+        width: 47
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 778a998601cb956a0800000000000000
+      internalID: -6459925411825866633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Insufficient Points Alert_23
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 238
+        width: 113
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9977905e65c503e80800000000000000
+      internalID: -8200953393162127463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Insufficient Points Alert_24
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 238
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 234bf120fbcce0540800000000000000
+      internalID: 4976139759037428786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Insufficient Points Alert_0: -8875213994773252116
+      Insufficient Points Alert_1: 7062983466408032438
+      Insufficient Points Alert_10: 6319450231240738793
+      Insufficient Points Alert_11: 2245273920013617345
+      Insufficient Points Alert_12: 6408562493333305390
+      Insufficient Points Alert_13: -99092710912195197
+      Insufficient Points Alert_14: 6023903082778315322
+      Insufficient Points Alert_15: 7956653407522721990
+      Insufficient Points Alert_16: -7549679639364250845
+      Insufficient Points Alert_17: -1152176299595691871
+      Insufficient Points Alert_18: -1000834402385790121
+      Insufficient Points Alert_19: -7933204903045249289
+      Insufficient Points Alert_2: 9220171867998512536
+      Insufficient Points Alert_20: 5467176532019090896
+      Insufficient Points Alert_21: 8921062775428846554
+      Insufficient Points Alert_22: -6459925411825866633
+      Insufficient Points Alert_23: -8200953393162127463
+      Insufficient Points Alert_24: 4976139759037428786
+      Insufficient Points Alert_3: 6488353318474821997
+      Insufficient Points Alert_4: -8742681411754564494
+      Insufficient Points Alert_5: 5320618598170746984
+      Insufficient Points Alert_6: 2831565012574130102
+      Insufficient Points Alert_7: -6525466796021446303
+      Insufficient Points Alert_8: 6575940522499622899
+      Insufficient Points Alert_9: 463983285949681666
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

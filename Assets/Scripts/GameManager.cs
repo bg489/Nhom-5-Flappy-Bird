@@ -10,6 +10,9 @@ public class GameManager : MonoBehaviour
 
     public TextMeshProUGUI scoreText; // Reference to a UI Text component to display the score
 
+    public GameObject spawnerObject;
+    private Spawner spawner; // Reference to the Spawner script
+
     public GameObject playButton;
 
     public GameObject gameOver;
@@ -19,11 +22,17 @@ public class GameManager : MonoBehaviour
 
     private int score;
 
+    public int points
+    {
+        get { return score; }
+    }
+
     bool isPaused = false; // Flag to check if the game is paused
 
     private void OnEnable()
     {
         pauseAction.Enable();
+        spawner = spawnerObject.GetComponent<Spawner>(); // Get the Spawner component from the specified GameObject
     }
 
     private void OnDisable()
@@ -40,6 +49,8 @@ public class GameManager : MonoBehaviour
 
     public void Play()
     {
+        spawner.isSpawned = true; // Enable spawning of pipes
+        spawner.SetPublicImageColor(Color.white);
         isPaused = false; // Reset the pause flag
         score = 0;
         scoreText.text = score.ToString();
@@ -72,15 +83,25 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        spawner.disableThePipes.SetActive(false);
+        spawner.enableThePipes.SetActive(false);
+        spawner.doNotHaveEnoughSign.SetActive(false);
         gameOver.SetActive(true); // Show the Game Over UI
         playButton.SetActive(true); // Show the Play button
+        score = -1; // Reset the score to 0
 
         Pause(); // Pause the game
     }
 
     public void IncreaseScore()
     {
-        score+= 1;
+        score+= 5;
+        scoreText.text = score.ToString(); // Update the score text in the UI
+    }
+
+    public void IncreaseScore(int scorePlus)
+    {
+        score += scorePlus;
         scoreText.text = score.ToString(); // Update the score text in the UI
     }
 

@@ -5,6 +5,7 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private AudioClip jumpSound; // Audio clip for the jump sound effect
     [SerializeField] private AudioClip pipePassSound;
+    [SerializeField] private AudioClip redPipePassSound;
     [SerializeField] private AudioClip ouch;
     [SerializeField] private AudioClip lose;
     private AudioSource audioSource; // Reference to the AudioSource component
@@ -95,6 +96,11 @@ public class Player : MonoBehaviour
         {
             FindAnyObjectByType<GameManager>().IncreaseScore();
             audioSource.PlayOneShot(pipePassSound);
+        }
+        else if (collision.CompareTag("ScoringRedPipes"))
+        {
+            FindAnyObjectByType<GameManager>().IncreaseScore(40);
+            audioSource.PlayOneShot(redPipePassSound);
         }
     }
 }
