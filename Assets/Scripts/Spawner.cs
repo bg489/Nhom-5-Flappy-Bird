@@ -13,6 +13,7 @@ public class Spawner : MonoBehaviour
     public GameObject disableThePipesButton;
     public GameObject doNotHaveEnoughSign;
     public GameObject gameManagerObject;
+    
     private GameManager gameManager;
 
     [SerializeField] private AudioClip enable;
@@ -31,6 +32,7 @@ public class Spawner : MonoBehaviour
 
     private bool wasSpawned;
     public bool isSpawned = true;
+    public GameObject X;
 
     private void OnEnable()
     {
@@ -95,6 +97,8 @@ public class Spawner : MonoBehaviour
             {
                 return;
             }
+
+
             if (gameManager.points >= 100)
             {
                 StartCoroutine(TemporarilyDisablenablePipes(2f)); // bật trong 2 giây

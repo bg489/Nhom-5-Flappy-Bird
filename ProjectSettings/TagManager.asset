@@ -8,6 +8,8 @@ TagManager:
   - Scoring
   - ScoringRedPipes
   - Ground
+  - EnemyBullet
+  - MyBullet
   layers:
   - Default
   - TransparentFX

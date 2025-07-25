@@ -70,6 +70,13 @@ public class GameManager : MonoBehaviour
         {
             Destroy(pipe.gameObject); // Destroy all existing Pipes
         }
+
+        EnemyController[] enemies = FindObjectsOfType<EnemyController>(); // Find all Pipes in the scene
+
+        foreach (EnemyController enemy in enemies)
+        {
+            Destroy(enemy.gameObject); // Destroy all existing Pipes
+        }
         player.transform.position = new Vector3(-7.0f, 0f, 0f); // Reset the player's position to the center of the screen
         player.transform.rotation = Quaternion.identity; // Reset the player's rotation to the default
         player.direction = Vector3.zero ;

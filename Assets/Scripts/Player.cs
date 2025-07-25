@@ -41,6 +41,7 @@ public class Player : MonoBehaviour
 
     public GameObject gameManagerObject;
     private GameManager gameManager;
+    public GameObject enemyExplosionPrefab; // Reference to the explosion prefab for the enemy
 
     private void OnEnable()
     {
@@ -188,6 +189,18 @@ public class Player : MonoBehaviour
         {
             FindAnyObjectByType<GameManager>().IncreaseScore(40);
             audioSource.PlayOneShot(redPipePassSound);
+        }
+        else if (collision.CompareTag("EnemyBullet"))
+        {
+            if (isShielded) // Check if the player is shielded
+            {
+                audioSource.PlayOneShot(shieldBlockPipes); // Play the ouch sound effect
+                return; // Exit the method to prevent further actions
+            }
+            FindAnyObjectByType<GameManager>().IncreaseScore(-50);
+            GameObject afterExplore = (GameObject)Instantiate(enemyExplosionPrefab, collision.transform.position, collision.transform.rotation);
+            Destroy(afterExplore, 0.5f); // Destroy the explosion effect after 0.5 seconds
+            Destroy(collision.gameObject); // Destroy the enemy bullet
         }
     }
 }
